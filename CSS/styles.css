@@ -31,12 +31,41 @@ body {
   background-color: var(--dsc-color-bg-primary);
 }
 
+main {
+  padding: 0 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* generic styles */
+
+.dsc-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.dsc-mb20 {
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* header styles */
 
 header {
   background-color: var(--dsc-color-bg-secondary);
   height: 70px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 nav {
@@ -46,30 +75,21 @@ nav {
   align-items: center;
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-}
+/* ------------------------------------------------------------------ */
+/* card styles */
 
 
-
-.card {
+.dsc-card {
   border: 1px solid var(--dsc-color-card-border);
   border-radius: 4px;
   background-color: var(--dsc-color-card-bg);
 }
 
-
-
-.line-bottom {
+.dsc-line-bottom {
   border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
-
-
-
-.btn {
+.dsc-btn {
   border-radius: 4px;
   height: 42px;
   font-size: 16px;
@@ -80,23 +100,22 @@ nav {
 
 }
 
-.btn-page-container {
-  width: 220px;
+/* ------------------------------------------------------------------ */
+/* btn styles */
+
+.dsc-btn-page-container {
+  width: 100%;
   display: grid;
   grid-gap: 20px
 }
 
-.btn-blue {
+.dsc-btn-blue {
   background-color: var(--dsc-color-btn-primary);
   color: var(--dsc-color-btn-inverse);
 }
 
-.btn-white {
+.dsc-btn-white {
   background-color: var(--dsc-color-btn-inverse);
   color: var(--dsc-color-btn-primary);
   border: 1px solid var(--dsc-color-btn-primary);
-}
-
-.mb20 {
-  margin-bottom: 20px;
 }
