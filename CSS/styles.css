@@ -89,6 +89,21 @@ nav {
   border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
+/* ------------------------------------------------------------------ */
+/* btn styles */
+
+.dsc-btn-page-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px
+}
+
+@media(min-width:576px) {
+  .dsc-btn-page-container {
+    width: 220px;
+  }
+}
+
 .dsc-btn {
   border-radius: 4px;
   height: 42px;
@@ -98,15 +113,6 @@ nav {
   justify-content: center;
   align-items: center;
 
-}
-
-/* ------------------------------------------------------------------ */
-/* btn styles */
-
-.dsc-btn-page-container {
-  width: 100%;
-  display: grid;
-  grid-gap: 20px
 }
 
 .dsc-btn-blue {
